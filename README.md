@@ -4,7 +4,7 @@
 
 Timo Zandbergen
 
-Damon Jellema
+Damon Jay Jellema
 
 Leon Boussen
 
@@ -19,5 +19,7 @@ Marcellus Moerman
 Rafael van Marsbergen
 
 Trello: https://trello.com/b/jVkgluh3/vertical-slice
+
+
 
 
