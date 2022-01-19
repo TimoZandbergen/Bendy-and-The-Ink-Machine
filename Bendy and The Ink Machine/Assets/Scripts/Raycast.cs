@@ -20,15 +20,15 @@ public class Raycast : MonoBehaviour
 
         if(Physics.Raycast(transform.position, fwd, out hit, rayLength, layerMaskInteract.value))
         {
-            Debug.Log("raycast?");
+            //Debug.Log("raycast?");
             if (hit.collider.CompareTag("Object"))
             {
                 raycastedObj = hit.collider.gameObject;
-                Debug.Log("object");
+                //Debug.Log("object");
 
                 if (Input.GetKeyDown("e"))
                 {
-                    Debug.Log("interact with object");
+                    //Debug.Log("interact with object");
                     raycastedObj.SetActive(false);
                 }
             }
