@@ -18,7 +18,7 @@ public class Raycast : MonoBehaviour
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
         //Debug.Log("vector");
 
-        if(Physics.Raycast(transform.position, fwd, out hit, rayLength, layerMaskInteract.value))
+        if(Physics.Raycast(transform.position, fwd, out hit))
         {
             //Debug.Log("raycast?");
             if (hit.collider.CompareTag("Object"))
@@ -26,11 +26,15 @@ public class Raycast : MonoBehaviour
                 raycastedObj = hit.collider.gameObject;
                 //Debug.Log("object");
 
-                if (Input.GetKeyDown("e"))
+                if (Input.GetKeyDown("f"))
                 {
                     //Debug.Log("interact with object");
                     raycastedObj.SetActive(false);
                 }
+            }
+            else
+            {
+                //Debug.Log(hit.collider.gameObject.name);
             }
         }
         else
