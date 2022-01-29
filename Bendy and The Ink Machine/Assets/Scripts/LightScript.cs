@@ -23,9 +23,9 @@ public class LightScript : MonoBehaviour
 
     IEnumerator Delayy()
     {
-        Debug.Log("start");
+        //Debug.Log("start");
         yield return new WaitForSecondsRealtime(Random.Range(1f, 100f));
         OnOff = !OnOff;
-        Debug.Log("done");
+        //Debug.Log("done");
     }
 }

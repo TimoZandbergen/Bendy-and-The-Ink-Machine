@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Object
   - Door
+  - disctrigga
+  - cantrigga
+  - cantrigga1
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ public class DoorController : MonoBehaviour
             Animator anim = other.GetComponentInChildren<Animator>();
             if(Input.GetKeyDown(KeyCode.E))
             anim.SetTrigger("OpenClose");
+
         }
     }
 }
